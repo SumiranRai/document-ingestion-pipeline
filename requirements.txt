@@ -1,0 +1,8 @@
+kafka-python
+psycopg2-binary
+pandas
+pdfplumber
+pytesseract
+pillow
+pydantic
+requests
