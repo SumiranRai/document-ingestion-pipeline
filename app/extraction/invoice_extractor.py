@@ -1,3 +1,6 @@
+from dataclasses import fields
+from app.persistence.db_writer import save_invoice_data
+
 import requests
 import re
 
@@ -30,28 +33,13 @@ def extract_text_from_image(image_path):
 
 def parse_invoice_fields(text):
 
+    import re
+
     fields = {}
 
+    # Invoice Number
     invoice_number = re.search(
         r"Invoice\s*(No|Number)?[:\-]?\s*(\S+)",
-        text,
-        re.IGNORECASE
-    )
-
-    vendor_name = re.search(
-        r"Vendor[:\-]?\s*(.+)",
-        text,
-        re.IGNORECASE
-    )
-
-    gstin = re.search(
-        r"GSTIN[:\-]?\s*(\S+)",
-        text,
-        re.IGNORECASE
-    )
-
-    total_amount = re.search(
-        r"Total\s*Amount[:\-]?\s*([\d,.]+)",
         text,
         re.IGNORECASE
     )
@@ -59,14 +47,61 @@ def parse_invoice_fields(text):
     if invoice_number:
         fields["invoice_number"] = invoice_number.group(2)
 
-    if vendor_name:
-        fields["vendor_name"] = vendor_name.group(1)
+    # Vendor
+    vendor = re.search(
+        r"(Seller|Vendor)[:\-]?\s*\n?(.+)",
+        text,
+        re.IGNORECASE
+    )
+
+    if vendor:
+        fields["vendor_name"] = vendor.group(2).strip()
+
+    # Invoice Date
+    invoice_date = re.search(
+        r"(\d{2}/\d{2}/\d{4})",
+        text
+    )
+
+    if invoice_date:
+        fields["invoice_date"] = invoice_date.group(1)
+
+    # GSTIN
+    gstin = re.search(
+        r"GSTIN[:\-]?\s*(\S+)",
+        text,
+        re.IGNORECASE
+    )
 
     if gstin:
         fields["gstin"] = gstin.group(1)
 
-    if total_amount:
-        fields["total_amount"] = total_amount.group(1)
+    # Total Amount
+    # Total Amount
+
+    amount_matches = re.findall(
+        r"\d[\d\s]*,\d{2}",
+        text
+    )
+
+    cleaned_amounts = []
+
+    for amt in amount_matches:
+
+        cleaned = amt.replace(" ", "").replace(",", ".")
+
+        try:
+            value = float(cleaned)
+
+            # Ignore unrealistic huge numbers
+            if value < 1000000:
+                cleaned_amounts.append(value)
+
+        except:
+            pass
+
+    if cleaned_amounts:
+        fields["total_amount"] = max(cleaned_amounts)
 
     return fields
 
@@ -86,4 +121,3 @@ if __name__ == "__main__":
     print("\n===== PARSED FIELDS =====\n")
 
     print(parsed_fields)
-

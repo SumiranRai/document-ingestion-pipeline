@@ -17,6 +17,7 @@ def save_invoice_data(parsed_data, file_path):
     document_id = str(uuid.uuid4())
     invoice_id = str(uuid.uuid4())
 
+    # Insert into documents table
     cursor.execute(
         """
         INSERT INTO documents (
@@ -35,12 +36,13 @@ def save_invoice_data(parsed_data, file_path):
             "invoice",
             file_path.split("/")[-1],
             file_path,
-            "local_folder",
+            "local_upload",
             "processed",
             datetime.now()
         )
     )
 
+    # Insert invoice fields
     cursor.execute(
         """
         INSERT INTO invoice_data (
@@ -48,18 +50,16 @@ def save_invoice_data(parsed_data, file_path):
             document_id,
             invoice_number,
             vendor_name,
-            gstin,
             invoice_date,
             total_amount
         )
-        VALUES (%s, %s, %s, %s, %s, %s, %s)
+        VALUES (%s, %s, %s, %s, %s, %s)
         """,
         (
             invoice_id,
             document_id,
             parsed_data.get("invoice_number"),
             parsed_data.get("vendor_name"),
-            parsed_data.get("gstin"),
             parsed_data.get("invoice_date"),
             parsed_data.get("total_amount")
         )
@@ -70,4 +70,4 @@ def save_invoice_data(parsed_data, file_path):
     cursor.close()
     conn.close()
 
-    print("Invoice data saved successfully")
+    print("Invoice saved successfully")

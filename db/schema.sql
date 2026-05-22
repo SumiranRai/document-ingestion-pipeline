@@ -1,6 +1,7 @@
-DROP TABLE IF EXISTS invoice_data;
-DROP TABLE IF EXISTS processing_logs;
-DROP TABLE IF EXISTS documents;
+DROP TABLE IF EXISTS invoice_data CASCADE;
+DROP TABLE IF EXISTS processing_logs CASCADE;
+DROP TABLE IF EXISTS invoices CASCADE;
+DROP TABLE IF EXISTS documents CASCADE;
 
 CREATE TABLE documents (
     document_id UUID PRIMARY KEY,
@@ -27,9 +28,9 @@ CREATE TABLE invoice_data (
 );
 
 CREATE TABLE processing_logs (
-    log_id SERIAL PRIMARY KEY,
-    document_id UUID REFERENCES documents(document_id),
+    log_id UUID PRIMARY KEY,
+    document_id UUID,
+    log_message TEXT,
     log_level VARCHAR(20),
-    message TEXT,
-    created_at TIMESTAMP DEFAULT NOW()
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
