@@ -6,7 +6,7 @@ from datetime import datetime
 def save_invoice_data(parsed_data, file_path):
 
     conn = psycopg2.connect(
-        host="localhost",
+        host="postgres",
         database="documentdb",
         user="airflow",
         password="airflow"
@@ -65,6 +65,27 @@ def save_invoice_data(parsed_data, file_path):
         )
     )
 
+    cursor.execute(
+        """
+        INSERT INTO processing_logs (
+            log_id,
+            document_id,
+            stage,
+            status,
+            message,
+            created_at
+        )
+        VALUES (%s, %s, %s, %s, %s, %s)
+        """,
+        (
+            str(uuid.uuid4()),
+            document_id,
+            "DB_SAVE",
+            "SUCCESS",
+            "Invoice saved successfully",
+            datetime.now()
+        )
+    )
     conn.commit()
 
     cursor.close()

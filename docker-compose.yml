@@ -66,6 +66,7 @@ services:
       - ./dags:/opt/airflow/dags
       - ./app:/opt/airflow/app
       - ./requirements.txt:/requirements.txt
+      - ./:/opt/airflow/project
 
     environment:
       AIRFLOW__CORE__LOAD_EXAMPLES: "False"
