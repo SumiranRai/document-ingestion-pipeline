@@ -1,0 +1,31 @@
+date,DrCr,amount,balance,mode,name
+2024-01-01,Dr,18590.45,127323.57,NEFT,NEFT Transfer Received - HDFC Bank
+2024-01-02,Dr,18464.49,108859.08,RTGS,Dividend Credit - HDFC Bank
+2024-01-03,Dr,14844.21,94014.87,UPI,Salary Credit - HDFC Bank
+2024-01-04,Dr,5622.22,88392.65,Cheque,Insurance Premium - HDFC Bank
+2024-01-05,Dr,14118.88,74273.77,RTGS,Dividend Credit - HDFC Bank
+2024-01-06,Dr,5666.93,68606.84,Cheque,Bill Payment - HDFC Bank
+2024-01-07,Dr,19018.42,49588.42,NEFT,EMI Debit - HDFC Bank
+2024-01-08,Dr,7091.21,42497.21,NEFT,Online Purchase - HDFC Bank
+2024-01-09,Dr,2500.1,39997.11,UPI,Online Purchase - HDFC Bank
+2024-01-10,Dr,15172.41,24824.7,UPI,Interest Credit - HDFC Bank
+2024-01-11,Cr,3295.69,28120.39,ATM,ATM Cash Withdrawal - HDFC Bank
+2024-01-12,Cr,7470.82,35591.21,RTGS,Insurance Premium - HDFC Bank
+2024-01-13,Dr,14518.33,21072.88,RTGS,ATM Cash Withdrawal - HDFC Bank
+2024-01-14,Dr,16599.33,4473.55,IMPS,ATM Cash Withdrawal - HDFC Bank
+2024-01-15,Dr,21688.79,-17215.24,ATM,Bill Payment - HDFC Bank
+2024-01-16,Dr,15964.97,-33180.21,IMPS,UPI Payment to merchant - HDFC Bank
+2024-01-17,Dr,9010.71,-42190.92,RTGS,Bill Payment - HDFC Bank
+2024-01-18,Cr,23429.03,-18761.89,RTGS,ATM Cash Withdrawal - HDFC Bank
+2024-01-19,Cr,15947.46,-2814.43,Cheque,NEFT Transfer Received - HDFC Bank
+2024-01-20,Dr,11664.05,-14478.48,IMPS,Dividend Credit - HDFC Bank
+2024-01-21,Dr,17178.43,-31656.91,UPI,NEFT Transfer Received - HDFC Bank
+2024-01-22,Dr,20165.14,-51822.05,ATM,Bill Payment - HDFC Bank
+2024-01-23,Dr,5432.37,-57254.42,Cheque,Online Purchase - HDFC Bank
+2024-01-24,Dr,16454.88,-73709.3,ATM,Interest Credit - HDFC Bank
+2024-01-25,Dr,6769.03,-80478.33,NEFT,Dividend Credit - HDFC Bank
+2024-01-26,Cr,6715.99,-73762.34,Cheque,EMI Debit - HDFC Bank
+2024-01-27,Cr,10105.13,-63657.21,NEFT,UPI Payment to merchant - HDFC Bank
+2024-01-28,Cr,12439.19,-51218.02,UPI,ATM Cash Withdrawal - HDFC Bank
+2024-01-29,Dr,15760.66,-66978.68,RTGS,EMI Debit - HDFC Bank
+2024-01-30,Cr,1775.49,-65203.19,ATM,Insurance Premium - HDFC Bank

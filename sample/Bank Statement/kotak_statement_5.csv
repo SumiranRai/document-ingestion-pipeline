@@ -1,0 +1,31 @@
+date,DrCr,amount,balance,mode,name
+2024-04-30,Cr,23521.02,102297.03,RTGS,UPI Payment to merchant - Kotak Bank
+2024-05-01,Cr,14313.81,116610.84,ATM,Dividend Credit - Kotak Bank
+2024-05-02,Dr,7736.1,108874.74,NEFT,EMI Debit - Kotak Bank
+2024-05-03,Cr,15245.21,124119.95,IMPS,Interest Credit - Kotak Bank
+2024-05-04,Dr,11165.56,112954.39,NEFT,Dividend Credit - Kotak Bank
+2024-05-05,Dr,19884.64,93069.75,RTGS,UPI Payment to merchant - Kotak Bank
+2024-05-06,Cr,2302.93,95372.68,Cheque,Insurance Premium - Kotak Bank
+2024-05-07,Dr,2516.0,92856.68,NEFT,Bill Payment - Kotak Bank
+2024-05-08,Dr,20202.76,72653.92,NEFT,Salary Credit - Kotak Bank
+2024-05-09,Dr,6272.1,66381.82,ATM,Insurance Premium - Kotak Bank
+2024-05-10,Dr,11494.32,54887.5,RTGS,Insurance Premium - Kotak Bank
+2024-05-11,Dr,18014.98,36872.52,ATM,Interest Credit - Kotak Bank
+2024-05-12,Dr,6250.81,30621.71,RTGS,Salary Credit - Kotak Bank
+2024-05-13,Dr,19504.83,11116.88,NEFT,UPI Payment to merchant - Kotak Bank
+2024-05-14,Cr,13045.35,24162.23,UPI,Dividend Credit - Kotak Bank
+2024-05-15,Dr,22953.26,1208.97,UPI,Interest Credit - Kotak Bank
+2024-05-16,Dr,20075.13,-18866.16,RTGS,Dividend Credit - Kotak Bank
+2024-05-17,Cr,14967.22,-3898.94,ATM,Insurance Premium - Kotak Bank
+2024-05-18,Cr,22322.1,18423.16,ATM,Dividend Credit - Kotak Bank
+2024-05-19,Dr,22450.76,-4027.6,RTGS,Interest Credit - Kotak Bank
+2024-05-20,Dr,6627.95,-10655.55,NEFT,Bill Payment - Kotak Bank
+2024-05-21,Cr,12218.01,1562.46,NEFT,Bill Payment - Kotak Bank
+2024-05-22,Dr,2121.59,-559.13,IMPS,NEFT Transfer Received - Kotak Bank
+2024-05-23,Dr,8529.02,-9088.15,Cheque,ATM Cash Withdrawal - Kotak Bank
+2024-05-24,Dr,3940.6,-13028.75,ATM,UPI Payment to merchant - Kotak Bank
+2024-05-25,Cr,5506.03,-7522.72,ATM,EMI Debit - Kotak Bank
+2024-05-26,Dr,13656.76,-21179.48,ATM,Salary Credit - Kotak Bank
+2024-05-27,Dr,20855.7,-42035.18,ATM,Insurance Premium - Kotak Bank
+2024-05-28,Cr,684.39,-41350.79,Cheque,EMI Debit - Kotak Bank
+2024-05-29,Dr,346.22,-41697.01,IMPS,Bill Payment - Kotak Bank

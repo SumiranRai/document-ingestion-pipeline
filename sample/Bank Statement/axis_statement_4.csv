@@ -1,0 +1,31 @@
+date,DrCr,amount,balance,mode,name
+2024-03-31,Dr,1293.35,143849.32,IMPS,UPI Payment to merchant - Axis Bank
+2024-04-01,Cr,24498.99,168348.31,NEFT,Interest Credit - Axis Bank
+2024-04-02,Cr,17700.55,186048.86,Cheque,Salary Credit - Axis Bank
+2024-04-03,Dr,2066.05,183982.81,RTGS,UPI Payment to merchant - Axis Bank
+2024-04-04,Cr,1093.5,185076.31,IMPS,Insurance Premium - Axis Bank
+2024-04-05,Cr,3872.73,188949.04,NEFT,Salary Credit - Axis Bank
+2024-04-06,Dr,9243.36,179705.68,UPI,Online Purchase - Axis Bank
+2024-04-07,Dr,17115.25,162590.43,RTGS,ATM Cash Withdrawal - Axis Bank
+2024-04-08,Dr,19546.88,143043.55,ATM,Insurance Premium - Axis Bank
+2024-04-09,Cr,4032.92,147076.47,NEFT,UPI Payment to merchant - Axis Bank
+2024-04-10,Dr,22059.12,125017.35,UPI,UPI Payment to merchant - Axis Bank
+2024-04-11,Cr,23127.28,148144.63,ATM,NEFT Transfer Received - Axis Bank
+2024-04-12,Dr,4148.11,143996.52,RTGS,ATM Cash Withdrawal - Axis Bank
+2024-04-13,Dr,21829.74,122166.78,ATM,NEFT Transfer Received - Axis Bank
+2024-04-14,Dr,20451.35,101715.43,ATM,Online Purchase - Axis Bank
+2024-04-15,Dr,20549.3,81166.13,NEFT,NEFT Transfer Received - Axis Bank
+2024-04-16,Dr,16568.82,64597.31,ATM,Online Purchase - Axis Bank
+2024-04-17,Dr,21635.95,42961.36,IMPS,Online Purchase - Axis Bank
+2024-04-18,Cr,12833.26,55794.62,RTGS,Dividend Credit - Axis Bank
+2024-04-19,Dr,23493.08,32301.54,UPI,Bill Payment - Axis Bank
+2024-04-20,Dr,14598.63,17702.91,IMPS,Salary Credit - Axis Bank
+2024-04-21,Dr,14994.97,2707.94,IMPS,Online Purchase - Axis Bank
+2024-04-22,Dr,15233.98,-12526.04,Cheque,ATM Cash Withdrawal - Axis Bank
+2024-04-23,Dr,22507.72,-35033.76,NEFT,Bill Payment - Axis Bank
+2024-04-24,Dr,17777.88,-52811.64,UPI,Dividend Credit - Axis Bank
+2024-04-25,Cr,17234.06,-35577.58,RTGS,NEFT Transfer Received - Axis Bank
+2024-04-26,Dr,10896.18,-46473.76,RTGS,Online Purchase - Axis Bank
+2024-04-27,Cr,7985.11,-38488.65,UPI,Bill Payment - Axis Bank
+2024-04-28,Cr,7870.26,-30618.39,ATM,Online Purchase - Axis Bank
+2024-04-29,Dr,17490.77,-48109.16,Cheque,UPI Payment to merchant - Axis Bank
